@@ -1,0 +1,86 @@
+/* Set global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1,h2{
+  text-align: center;
+}
+
+/* Style the header */
+#header {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+#header-img {
+  height: 100px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  display:inline-flexbox;
+}
+
+/* Style the sections */
+.about-section, .product-section, .form-section, .video {
+  padding: 50px;
+}
+
+.about-section h2, .product-section h2, .form-section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.about-section p, .product-section p {
+  font-size: 1.2em;
+}
+
+.product-section figure {
+  margin: 50px 0;
+}
+
+.product-section img {
+  margin-bottom: 10px;
+}
+
+.product-section figcaption {
+  font-size: 1.1em;
+}
+
+/* Style the form */
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#email {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+/* Style the footer */
+.team {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
