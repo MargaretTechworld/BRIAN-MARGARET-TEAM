@@ -1,86 +1,174 @@
-/* Set global styles */
-body {
-  font-family: Arial, sans-serif;
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-h1,h2{
-  text-align: center;
+
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-/* Style the header */
-#header {
-  background-color: #333;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: aqua;
 }
 
-#header-img {
-  height: 100px;
-}
-
-.nav-link {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-  display:inline-flexbox;
-}
-
-/* Style the sections */
-.about-section, .product-section, .form-section, .video {
-  padding: 50px;
-}
-
-.about-section h2, .product-section h2, .form-section h2 {
-  font-size: 2em;
-  margin-bottom: 30px;
-}
-
-.about-section p, .product-section p {
-  font-size: 1.2em;
-}
-
-.product-section figure {
-  margin: 50px 0;
-}
-
-.product-section img {
-  margin-bottom: 10px;
-}
-
-.product-section figcaption {
-  font-size: 1.1em;
-}
-
-/* Style the form */
-#form {
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(13, 30, 124);
+  color: white;
 }
 
-#email {
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 1rem;
+  background-color: #333;
+  box-shadow: 0 2px 4px rgba(250, 248, 248, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  
 }
 
-.btn {
-  background-color: #333;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1.2em;
-  cursor: pointer;
+#header img {
+  max-width: 100%;
+  height: auto;
 }
 
-/* Style the footer */
-.team {
-  background-color: #333;
+#nav-bar ul {
+  display: flex;
+  list-style: none;
+}
+
+#nav-bar li + li {
+
+  margin-left: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
   color: white;
-  padding: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+.about-section {
+  max-width: 800px;
+  margin-top: 5rem;
+  padding: 2rem;
   text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.video {
+  max-width: 800px;
+  margin-top: 2rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#video {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.product-section {
+  max-width: 800px;
+  margin-top: 2rem;
+  padding: 2rem;
+  text-align: center;
+  display: block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.product-section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.product-section figure {
+  margin: 2rem 0;
+}
+
+.product-section img {
+  display: block;
+  margin: 0 auto;
+}
+
+.product-section figcaption {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+
+.form-section {
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form-section h2 {
+  margin-bottom: 10px;
+}
+
+.form-section input[type="email"] {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.form-section input[type="submit"] {
+  background-color: #6d706d;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-section input[type="submit"]:hover {
+  background-color: #0c0118;
+}
+footer.team {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
 }
